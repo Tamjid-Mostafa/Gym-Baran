@@ -21,11 +21,11 @@ const Navbar = () => {
           } z-30 transition-all`}
       >
         <div className="mx-5 flex h-16 max-w-screen-xl items-center justify-between xl:mx-auto">
-          <Link href="/" className="flex items-center font-display text-2xl">
-            <p><span className='bg-'>Gym</span> baran</p>
+          <Link href="/" className="flex items-center text-[20px] leading-8 sporting-grotesque ">
+            <p><span className='bg-primary rounded-xl text-white px-2 py-1 gym-shadow'>Gym</span> baran</p>
           </Link>
           <div>
-          <ul className="items-center justify-center space-y-8 md:flex hidden space-x-0 md:space-x-5 lg:space-x-10 text-[16px] md:space-y-0">
+          <ul className="items-center justify-center space-y-8 md:flex hidden space-x-0 md:space-x-5 lg:space-x-10 text-[16px] md:space-y-0 font-poppins">
             <li className="text-black">
               <Link href="/">Home</Link>
             </li>
@@ -38,12 +38,9 @@ const Navbar = () => {
             <li className="text-black">
               <Link href="/aboutus">About Us</Link>
             </li>
-            <button className="text-white bg-[#264373] px-[32px] py-[13px] rounded-[10px] border-none shadow">
-              Log in
-            </button>
             <AnimatePresence>
                 <motion.button
-                  className="px-[32px] py-[13px] rounded-[10px] border-none shadow border border-secondary bg-secondary  text-white transition-all hover:bg-white hover:text-black"
+                  className="px-[32px] py-[13px] rounded-[10px] border-none gym-shadow border border-secondary bg-secondary  text-white transition-all hover:bg-white hover:text-black"
                   /* onClick={() => setShowSignInModal(true)} */
                   {...FADE_IN_ANIMATION_SETTINGS}
                 >
