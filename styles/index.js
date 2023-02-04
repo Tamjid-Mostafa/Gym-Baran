@@ -12,15 +12,16 @@ const styles = {
   flexStart: "flex justify-start items-start",
   flexEnd: "flex justify-end",
   navPadding: "pt-[98px]",
-
   
   heading2:
-    "font-poppins font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full",
+    "text-accent sm:font-normal font-bold sporting-grotesque sm:text-[50px] text-[28px] text-white sm:leading-[73px] leading-[66.8px] w-full",
   paragraph:
     "font-poppins font-normal text-dimWhite text-[18px] leading-[30.8px]",
 
   marginX: "sm:mx-16 mx-6",
   marginY: "sm:my-16 my-6",
+
+  topMargin: "sm:mt-[135px] mt-[120px]",
 
   // hero section
   heroHeading:
@@ -31,7 +32,7 @@ export default styles;
 
 export const layout = {
   section: `flex md:flex-row flex-col ${styles.yPaddings}`,
-  sectionReverse: `flex md:flex-row flex-col-reverse ${styles.paddingY}`,
+  sectionReverse: `flex md:flex-row flex-col-reverse ${styles.yPaddings}`,
 
   sectionImgReverse: `flex-1 flex ${styles.flexCenter} md:mr-10 mr-0 md:mt-0 mt-10 relative`,
   sectionImg: `flex-1 flex ${styles.flexCenter} md:ml-10 ml-0 md:mt-0 mt-10 relative`,

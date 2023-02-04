@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
 
-    <>
+    <nav className=''>
       <motion.nav
     variants={fadeIn('top', 'tween', 0.2, 1)}
     initial="hidden"
@@ -53,7 +53,7 @@ const Navbar = () => {
           </div>
         </div>
       </motion.nav>
-    </>
+    </nav>
   );
 }
 

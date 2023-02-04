@@ -7,17 +7,17 @@ import { AnimatePresence, motion } from 'framer-motion';
 import Link from 'next/link';
 import { FaChevronCircleRight, FaPlayCircle } from 'react-icons/fa'
 const Hero = () => (
-    <section className={`${styles.marginY} ${styles.paddings}`}>
+    <section className={`mt-[85px]`} >
     <motion.div
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-8`}
+      className={`mx-auto flex lg:flex-row flex-col gap-8`}
     >
       <motion.div
         variants={fadeIn('right', 'tween', 0.2, 1)}
-        className="flex-[0.95] flex justify-center flex-col"
+        className="flex-1 flex justify-center flex-col "
       >
         <div className='text-accent leading-[73px] font-bold text-[56px] sporting-grotesque'>
         Healthy in side <span className='text-primary'>fresh</span> out side
@@ -68,7 +68,7 @@ const Hero = () => (
         <img
           src="/heroImg.png"
           alt="get-started"
-          className="w-[90%] h-[90%] object-contain"
+          className="w-[100%] h-[100%] object-contain"
         />
       </motion.div>
       
