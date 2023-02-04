@@ -2,7 +2,6 @@
 
 import useScrollPosition from '@/lib/hooks/useScroll';
 import { AnimatePresence, motion } from 'framer-motion';
-import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import { fadeIn, FADE_IN_ANIMATION_SETTINGS } from '../utils/motion';
