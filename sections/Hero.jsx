@@ -16,21 +16,21 @@ const Hero = () => (
       className={`mx-auto flex lg:flex-row flex-col gap-8`}
     >
       <motion.div
-        variants={fadeIn('right', 'tween', 0.2, 1)}
+        variants={fadeIn('bottom', 'tween', 0.2, 1)}
         className="flex-1 flex justify-center flex-col "
       >
         <div className='text-accent leading-[73px] font-bold text-[56px] sporting-grotesque'>
         Healthy in side <span className='text-primary'>fresh</span> out side
         </div>
           <motion.div
-          variants={textVariant(0.7)} className={`${styles.paragraph} max-w-[492px] my-5 font-normal text-[16px] leading-7 tracking-[0.01em]`}>
+          variants={fadeIn('bottom','tween', 0.2, 1)} className={`${styles.paragraph} max-w-[492px] my-5 font-normal text-[16px] leading-7 tracking-[0.01em]`}>
             Build your Fron-End Web Application. Get work done quicker by
             building out entire projects. Isolating code to test features and
             animations. Want to keep it all under wraps?
           </motion.div>
           <div className={`max-w-[492px] my-5 flex justify-between`}>
           <motion.div
-          variants={textVariant(0.8)}>
+          variants={fadeIn('bottom','tween', 0.2, 1)}>
           <Link href="">
           <AnimatePresence>
                 <motion.button
@@ -44,7 +44,7 @@ const Hero = () => (
           </Link>
           </motion.div>
           <motion.div
-          variants={textVariant(0.8)}>
+          variants={fadeIn('bottom','tween', 0.3, 1)}>
           <Link href="">
           <AnimatePresence>
           <motion.button
@@ -62,7 +62,7 @@ const Hero = () => (
       </motion.div>
 
       <motion.div
-        variants={fadeIn('left', 'tween', 0.2, 1)}
+        variants={fadeIn('bottom', 'tween', 0.2, 1)}
         className={`flex-1 ${styles.flexCenter}`}
       >
         <img
