@@ -4,17 +4,18 @@ import useScrollPosition from '@/lib/hooks/useScroll';
 import { AnimatePresence, motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
-import styles from '../styles';
-import { FADE_IN_ANIMATION_SETTINGS, navVariants } from '../utils/motion';
+import { fadeIn, FADE_IN_ANIMATION_SETTINGS } from '../utils/motion';
 
 const Navbar = () => {
   const scrolled = useScrollPosition(50);
-  console.log(scrolled);
 
   return (
 
     <>
-      <div
+      <motion.nav
+    variants={fadeIn('top', 'tween', 0.2, 1)}
+    initial="hidden"
+    whileInView="show"
         className={`fixed top-0 w-full ${scrolled
             ? "border-b border-gray-200 bg-white/50 backdrop-blur-xl"
             : "bg-white/0"
@@ -51,7 +52,7 @@ const Navbar = () => {
             
           </div>
         </div>
-      </div>
+      </motion.nav>
     </>
   );
 }
