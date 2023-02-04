@@ -8,7 +8,7 @@ const Page = () => (
   <div className="overflow-hidden">
 
     <Navbar />
-    <div className={`max-w-screen-xl ${styles.yPaddings} mx-auto sm:px-0 px-5`}>
+    <div className={`max-w-screen-xl ${styles.yPaddings} mx-5 xl:mx-auto`}>
     <Hero />
     <Healthy />
     <StepCard />

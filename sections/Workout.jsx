@@ -15,7 +15,7 @@ const Workout = () => {
             className={`${layout.sectionReverse} justify-between`}>
 
             <motion.div
-                variants={fadeIn('left', 'tween', 0.5, 1)}  className={`-ml-16`}>
+                variants={fadeIn('left', 'tween', 0.5, 1)} className={`-ml-16`}>
                 <img className={`${layout.sectionImgReverse}`} src="/workout.png" alt="" />
             </motion.div>
             <motion.div
