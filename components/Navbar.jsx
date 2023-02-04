@@ -21,8 +21,8 @@ const Navbar = () => {
         whileInView="show"
         className={`fixed top-0 w-full ${scrolled
           ? "border-b border-gray-200 bg-white/50 backdrop-blur-xl"
-          : "bg-white/0"
-          } z-30 transition-all`}
+          : " sm:border-none border-b sm: border-gray-200 sm:bg-white/0 bg-white"
+          } z-30 transition-all `}
       >
         <div className="mx-5 flex h-16 max-w-screen-xl items-center justify-between xl:mx-auto">
           <Link href="/" className="flex items-center text-[20px] leading-8 sporting-grotesque ">
@@ -56,13 +56,14 @@ const Navbar = () => {
           </>
           <div className="md:hidden block items-center">
             <button
-              className={`relative w-14 h-14 bg-indigo-800/30 hover:bg-indigo-800/80 rounded-full flex flex-col items-center transition-all duration-300 justify-center ${!isMenuOpen ? "gap-y-1" : ""}`}
+              className={`relative w-14 h-14  rounded-full flex flex-col items-center transition-all duration-300 justify-center ${!isMenuOpen ? "gap-y-1" : ""}`}
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
-              <span className={`h-[2px] transition-all duration-300 bg-zinc-300 z-[10] ${!isMenuOpen ? "w-7" : "w-6 mb-[-1px] rotate-45"}`}></span>
-              <span className={`h-[2px] transition-all duration-300 bg-zinc-300 z-[10] ${!isMenuOpen ? "w-7" : "w-6 mt-[-1px] -rotate-45"}`}></span>
+              <span className={`h-[2px] transition-all duration-300  z-[10] ${!isMenuOpen ? "w-7 sm:bg-primary bg-accent" : "w-6 mb-[-1px] rotate-45 bg-white"}`}></span>
+              <span className={`h-[2px] transition-all duration-300  z-[10] ${!isMenuOpen ? "w-7 sm:bg-primary bg-accent" : "w-6 mt-[-1px] -rotate-45 bg-white"}`}></span>
+              <span className={`h-[2px] transition-all duration-300  z-[10] ${!isMenuOpen ? "w-7 sm:bg-primary bg-accent" : "w-6 mt-[-1px] -rotate-45 bg-white"}`}></span>
               {magnetActive ?
-                <motion.div layoutId="cursor" className="absolute inset-0 bg-primary rounded-full"></motion.div> : null
+                <motion.div layoutId="cursor" className="absolute inset-0  rounded-full"></motion.div> : null
               }
             </button>
 
