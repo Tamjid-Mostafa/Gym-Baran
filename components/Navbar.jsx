@@ -9,7 +9,6 @@ import Cursor from './Cursor';
 
 const Navbar = () => {
   const scrolled = useScrollPosition(50);
-  const { SignInModal, setShowSignInModal } = useState();
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [magnetActive, setMagnetActive] = useState(false)
   return (
@@ -55,12 +54,10 @@ const Navbar = () => {
             </ul>
 
           </>
-          <div className="md:hidden flex flex-1 justify-end items-center">
+          <div className="md:hidden block items-center">
             <button
               className={`relative w-14 h-14 bg-indigo-800/30 hover:bg-indigo-800/80 rounded-full flex flex-col items-center transition-all duration-300 justify-center ${!isMenuOpen ? "gap-y-1" : ""}`}
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              onPointerEnter={() => setMagnetActive(true)}
-              onPointerLeave={() => setMagnetActive(false)}
             >
               <span className={`h-[2px] transition-all duration-300 bg-zinc-300 z-[10] ${!isMenuOpen ? "w-7" : "w-6 mb-[-1px] rotate-45"}`}></span>
               <span className={`h-[2px] transition-all duration-300 bg-zinc-300 z-[10] ${!isMenuOpen ? "w-7" : "w-6 mt-[-1px] -rotate-45"}`}></span>
@@ -81,15 +78,15 @@ const Navbar = () => {
                 stiffness: 500,
               }}
               initial={{
-                y: "-100%"
+                y: "-350%"
               }}
               animate={{
-                y: !isMenuOpen ? "-100%" : "0%"
+                y: !isMenuOpen ? "-350%" : "0%"
               }}
               className="fixed inset-0 bg-zinc-900/80 backdrop-blur z-[-1]">
 
               <>
-                <ul className="list-none flex gap-10 px-[5%] flex-col justify-center items-center w-full h-full  flex-1 font-poppins">
+                <ul className="list-none md:hidden flex gap-10 flex-col justify-center items-center w-full h-full font-poppins">
                   <li className="text-white">
                     <Link href="/">Home</Link>
                   </li>
