@@ -30,10 +30,10 @@ const StepCard = () => {
                     </div>
                     <div className='flex '>
                         <div className=''>
-                            <img className='w-fit bg-white bg-opacity-10 rounded-[20px] p-[30px] backdrop-blur-[32px]' src='/man1.png' alt="img" />
+                            <img className='w-fit bg-white bg-opacity-10 rounded-[20px] p-[30px] backdrop-blur-[32px]' src='/dancer-balance-posture-on-one-leg.png' alt="img" />
                         </div>
                         <div className='ml-[30px] flex flex-col justify-between '>
-                            <h2 className='max-w-[170px] font-bold font-poppins  text-[20px] leading-[28px] tracking-[0.01em] text-white '>Get that 11 line in 30 days</h2>
+                            <h2 className='max-w-[170px] font-bold font-poppins  text-[20px] leading-[28px] tracking-[0.01em] text-white '>14 Days sherd challenge</h2>
                             <div className='flex gap-[16px] text-[16px] justify-between items-center font-poppins font-normal leading-[28px] tracking-[0.01em] text-white'>
                                 <span>Learn more</span>
                                 <span><FaArrowRight /></span>
@@ -42,10 +42,10 @@ const StepCard = () => {
                     </div>
                     <div className='flex  '>
                         <div className=''>
-                            <img className='w-fit bg-white bg-opacity-10 rounded-[20px] p-[30px] backdrop-blur-[32px]' src='/man1.png' alt="img" />
+                            <img className='w-fit bg-white bg-opacity-10 rounded-[20px] p-[30px] backdrop-blur-[32px]' src='/dancer-motion.png' alt="img" />
                         </div>
                         <div className='ml-[30px] flex flex-col justify-between '>
-                            <h2 className='max-w-[170px] font-bold font-poppins  text-[20px] leading-[28px] tracking-[0.01em] text-white '>Get that 11 line in 30 days</h2>
+                            <h2 className='max-w-[170px] font-bold font-poppins  text-[20px] leading-[28px] tracking-[0.01em] text-white '>Get flat belly in 30 days</h2>
                             <div className='flex gap-[16px] text-[16px] justify-between items-center font-poppins font-normal leading-[28px] tracking-[0.01em] text-white'>
                                 <span>Learn more</span>
                                 <span><FaArrowRight /></span>

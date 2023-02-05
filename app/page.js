@@ -5,7 +5,7 @@ import styles from '@/styles';
 
 
 const Page = () => (
-  <div className="overflow-hidden">
+  <div className="overflow-hidden relative">
 
     <Navbar />
     <div className={`max-w-screen-xl ${styles.yPaddings} mx-5 xl:mx-auto`}>

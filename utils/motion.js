@@ -164,3 +164,4 @@ export const FADE_IN_ANIMATION_SETTINGS = {
   animate: { opacity: 1 },
   transition: { duration: 0.2 },
 };
+

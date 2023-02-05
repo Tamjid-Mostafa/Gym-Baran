@@ -79,10 +79,10 @@ const Navbar = () => {
                 stiffness: 500,
               }}
               initial={{
-                y: "-350%"
+                x: "-100%"
               }}
               animate={{
-                y: !isMenuOpen ? "-350%" : "0%"
+                x: !isMenuOpen ? "-100%" : "0%"
               }}
               className="fixed inset-0 bg-zinc-900/80 backdrop-blur z-[-1]">
 
